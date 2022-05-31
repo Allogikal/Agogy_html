@@ -1,107 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
-    <title>Agogy [HTML]</title>
-  </head>
-  <body>
+    <title>Agogy [MAIN]</title>
+</head>
+
+<body>
+
     <!--             HEADER -->
+
     <header>
-      <div class="header_wrapper"></div>
+        <div class="header_wrapper">
+            <a href="vendor/search.html"><img src="assets/images/Search (Stroke).svg" alt="qwerty"></a>
+            <a href="vendor/community.html"><img src="assets/images/Community (Stroke).svg" alt="qwerty"></a>
+            <a class="header_wrapper__item" href="index.html"><img class="header_wrapper__item" src="assets/images/Logo.png" alt="qwerty"></a>
+            <a href="vendor/favourites.html"><img src="assets/images/Favorite (Stroke).svg" alt="qwerty"></a>
+            <a href="vendor/profile_user.html"><img src="assets/images/Profile (Stroke).svg" alt="qwerty"></a>
+        </div>
     </header>
 
     <!--             MAIN -->
 
     <section class="links">
-      <a href="#">
-        <img src="assets/images/Log_in.svg" alt="qwerty" />
-      </a>
-      <a href="#">
-        <img src="assets/images/Burger_menu_button.svg" alt="qwerty" />
-      </a>
+        <a href="#">
+            <img src="assets/images/Log_in.svg" alt="qwerty" />
+        </a>
+        <a onclick="CloseModal()" href="#">
+            <img src="assets/images/Burger_menu_button.svg" alt="qwerty" />
+        </a>
     </section>
 
     <section class="recommend">
-      <h1>Recommended for you</h1>
-      <div class="recommend_slider">
-        <a href="#"
-          ><img src="assets/images/Prev_slide (Stroke).svg" alt="qwerty"
-        /></a>
-        <div class="recommend_slider__item">
-          <img src="assets/images/Recommend-2.png" alt="qwerty" />
-          <h3>Monsters Go Bump</h3>
-          <p>Erika Recinos</p>
+        <h1>Recommended for you</h1>
+        <div class="recommend_slider">
+            <a href="#"><img src="assets/images/Prev_slide (Stroke).svg" alt="qwerty" /></a>
+            <div class="recommend_slider__item">
+                <img src="assets/images/Recommend-2.png" alt="qwerty" />
+                <h3>Monsters Go Bump</h3>
+                <p>Erika Recinos</p>
+            </div>
+            <div class="recommend_slider__item">
+                <img src="assets/images/Recommend-3.png" alt="qwerty" />
+                <h3>Moment Apart</h3>
+                <p>Odesza</p>
+            </div>
+            <div class="recommend_slider__item">
+                <img src="assets/images/Recommend-4.png" alt="qwerty" />
+                <h3>Tie Me Down</h3>
+                <p>Gryffin</p>
+            </div>
+            <div class="recommend_slider__item">
+                <img src="assets/images/Recommend-5.png" alt="qwerty" />
+                <h3>Chaff & Dust</h3>
+                <p>Hyonna</p>
+            </div>
+            <div class="recommend_slider__item">
+                <img src="assets/images/Recommend-2.png" alt="qwerty" />
+                <h3>Monsters Go Bump</h3>
+                <p>Erika Recinos</p>
+            </div>
+            <a href="#"><img src="assets/images/Next_slide (Stroke).svg" alt="qwerty" /></a>
         </div>
-        <div class="recommend_slider__item">
-            <img src="assets/images/Recommend-3.png" alt="qwerty" />
-            <h3>Moment Apart</h3>
-            <p>Odesza</p>
-          </div>
-          <div class="recommend_slider__item">
-            <img src="assets/images/Recommend-4.png" alt="qwerty" />
-            <h3>Tie Me Down</h3>
-            <p>Gryffin</p>
-          </div>
-          <div class="recommend_slider__item">
-            <img src="assets/images/Recommend-5.png" alt="qwerty" />
-            <h3>Chaff & Dust</h3>
-            <p>Hyonna</p>
-          </div>
-          <div class="recommend_slider__item">
-            <img src="assets/images/Recommend-2.png" alt="qwerty" />
-            <h3>Monsters Go Bump</h3>
-            <p>Erika Recinos</p>
-          </div>
-        <a href="#"
-          ><img src="assets/images/Next_slide (Stroke).svg" alt="qwerty"
-        /></a>
-      </div>
     </section>
 
     <section class="genres">
         <h1>Popular genres</h1>
         <div class="genres_slider">
-          <a href="#"
-            ><img src="assets/images/Prev_slide (Stroke).svg" alt="qwerty"
-          /></a>
-          <div class="genres_slider__item">
-            <img src="assets/images/Genre.png" alt="qwerty" />
-            <h3>Believer</h3>
-          </div>
-          <div class="genres_slider__item">
-              <img src="assets/images/Genre-1.png" alt="qwerty" />
-              <h3>Shortwave</h3>
+            <a href="#"><img src="assets/images/Prev_slide (Stroke).svg" alt="qwerty" /></a>
+            <div class="genres_slider__item">
+                <img src="assets/images/Genre.png" alt="qwerty" />
+                <h3>Believer</h3>
             </div>
             <div class="genres_slider__item">
-              <img src="assets/images/Genre-2.png" alt="qwerty" />
-              <h3>Dream on</h3>
+                <img src="assets/images/Genre-1.png" alt="qwerty" />
+                <h3>Shortwave</h3>
             </div>
-          <a href="#"
-            ><img src="assets/images/Next_slide (Stroke).svg" alt="qwerty"
-          /></a>
+            <div class="genres_slider__item">
+                <img src="assets/images/Genre-2.png" alt="qwerty" />
+                <h3>Dream on</h3>
+            </div>
+            <a href="#"><img src="assets/images/Next_slide (Stroke).svg" alt="qwerty" /></a>
         </div>
-      </section>
+    </section>
 
-      <section class="player">
-          <div class="player_left">
-              <img src="assets/images/Dream On - Art Design Cover.svg" alt="qwerty">
-              <h3>Chaff & Dust</h3>
-              <p>Hyonna</p>
-              <input value="0" min="0" max="100" type="range">
-          </div>
-          <div class="player_right">
-              <a href="#"><img src="assets/images/Favorite (Stroke).svg" alt="qwerty"></a>
-              <a href="#"><img src="assets/images/Prev (Stroke).svg" alt="qwerty"></a>
-              <a href="#"><img src="assets/images/Pause (Stroke).svg" alt="qwerty"></a>
-              <a href="#"><img src="assets/images/Next (Stroke).svg" alt="qwerty"></a>
-          </div>
-      </section>
+    <section class="player">
+        <div class="player_left">
+            <img src="assets/images/Dream On - Art Design Cover.svg" alt="qwerty">
+            <h3>Chaff & Dust</h3>
+            <p>Hyonna</p>
+            <input value="0" min="0" max="100" type="range">
+        </div>
+        <div class="player_right">
+            <a href="#"><img src="assets/images/Favorite (Stroke).svg" alt="qwerty"></a>
+            <a href="#"><img src="assets/images/Prev (Stroke).svg" alt="qwerty"></a>
+            <a href="#"><img src="assets/images/Pause (Stroke).svg" alt="qwerty"></a>
+            <a href="#"><img src="assets/images/Next (Stroke).svg" alt="qwerty"></a>
+        </div>
+    </section>
 
-    <!--             FOOTER -->
+    <section class="burger_menu">
+        <ul class="burger_menu__ul">
+            <a onclick="CloseModal()" class="burger_menu__close" href="#!">
+                <img src="assets/images/Close_menu.svg" alt="qwerty">
+            </a>
+            <li><img src="assets/images/Language.svg" alt="qwerty"> Language</li>
+            <li><img src="assets/images/FAQs.svg" alt="qwerty"> About</li>
+            <li><img src="assets/images/Vector.svg" alt="qwerty"> Theme</li>
+        </ul>
+    </section>
 
-    <footer></footer>
-  </body>
+    <!-- SCRIPTS -->
+    <script src="assets/js/close_modal.js"></script>
+
+</body>
+
 </html>

@@ -74,21 +74,46 @@ body {
     }
     // RECOMMEND
     .recommend {
-        grid-row: 3/4;
-        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+        grid-row: 2/7;
+        grid-column: 1/2;
+        justify-content: space-evenly;
+        align-items: center;
+        .recommend_pagination {
+            display: flex;
+            justify-content: space-around;
+            width: 6vw;
+            height: 2vh;
+            a {
+                width: 10px;
+                height: 10px;
+                span {
+                    display: inline-block;
+                    height: 10px;
+                    background-color: white;
+                    border-radius: 50%;
+                    width: 10px;
+                }
+            }
+        }
         h1 {
             font-family: 'Gilroy';
             font-style: normal;
             font-weight: 700;
             font-size: 2em;
-            margin: 0 0 4vh 8vw;
             display: flex;
             align-items: center;
+            justify-content: center;
             color: #EAF0FF;
+            margin: 0;
         }
         .recommend_slider {
+            width: 37vw;
+            flex-wrap: wrap;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
+            gap: 3vh;
             align-items: center;
             .recommend_slider__item {
                 display: flex;
@@ -118,37 +143,67 @@ body {
         }
     }
     // GENRES
+    .genres_prev {
+        grid-column: 2/3;
+        grid-row: 3/5;
+        align-self: center;
+        justify-self: flex-start;
+        margin-bottom: 8vh;
+    }
+    .genres_next {
+        grid-column: 2/4;
+        grid-row: 3/5;
+        align-self: center;
+        justify-self: flex-end;
+        margin-right: 13vw;
+        margin-bottom: 8vh;
+    }
     .genres {
-        grid-row: 5/6;
-        grid-column: 1/2;
+        width: 23vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        grid-row: 1/5;
+        grid-column: 2/3;
         h1 {
             font-family: 'Gilroy';
             font-style: normal;
             font-weight: 700;
-            font-size: 2em;
-            margin: 0 0 4vh 8vw;
+            font-size: 1.6em;
             display: flex;
             align-items: center;
+            text-align: center;
             color: #EAF0FF;
+            margin: 0;
         }
         .genres_slider {
+            width: 14vw;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
+            gap: 3vh;
+            margin-bottom: 4vh;
             .genres_slider__item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: flex-end;
+                img {
+                    width: 6vw;
+                }
                 h3 {
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 1.5em;
+                    font-size: 1em;
                     display: flex;
                     margin: 0;
                     color: #EAF0FF;
                     font-family: 'Gilroy';
                     margin-top: 2vh;
+                    position: absolute;
+                    padding-bottom: 10px;
                 }
             }
         }
