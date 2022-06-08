@@ -36,6 +36,11 @@ body {
     grid-template-rows: 2fr 1fr 6fr 2.5fr 6fr 2.5fr 2fr;
     //             HEADER
     header {
+        position: fixed;
+        background: #fff;
+        z-index: 1000;
+        width: 100vw;
+        top: 91vh;
         background-color: #025159;
         grid-column: 1/4;
         grid-row: 7/8;
@@ -249,3 +254,7 @@ body {
         }
     }
 }
+
+// MEDIA
+
+@import 'media';

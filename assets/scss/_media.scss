@@ -1,0 +1,118 @@
+/* Smartphones (вертикальная) ----------- */
+@media only screen and (max-width: 320px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 6fr;
+    height: 150vh;
+    width: 100vw;
+
+    header {
+      grid-column: 1/2;
+      grid-row: 7/8;
+
+      .header_wrapper {
+          width: 90vw;
+          height: 80%;
+
+          a {
+              img {
+                  height: 3vh;
+              }
+          }
+      }
+    }
+
+    .links {
+      grid-column: 1/2;
+      justify-content: flex-start;
+      margin: 3vh 0 3vh 10vw;
+
+      a {
+        margin-left: 4vw;
+     }
+    }
+
+    .recommend {
+      grid-column: 1/2;
+      grid-row: 2/3;
+
+      h1 {
+        width: 80vw;
+        text-align: center;
+        margin: 0 0 4vh 10vw;
+      }
+      .recommend_slider {
+        flex-direction: column;
+
+        a:nth-child(1) {
+          position: relative;
+          right: 41vw;
+          top: 15vh;
+        }
+
+        a:nth-child(7) {
+          position: relative;
+          left: 40vw;
+          bottom: 25vh;
+        }
+
+        h1 {
+          width: 80vw;
+          text-align: center;
+        }
+
+        .recommend_slider__item:nth-child(2),
+        .recommend_slider__item:nth-child(3),
+        .recommend_slider__item:nth-child(4),
+        .recommend_slider__item:nth-child(5) {
+          display: none;
+        }
+      }
+    }
+
+    .genres {
+      grid-row: 3/4;
+      h1 {
+        width: 80vw;
+        text-align: center;
+        margin: 0 0 4vh 15vw;
+      }
+
+      .genres_slider {
+        flex-direction: column;
+
+        a:nth-child(1) {
+          position: relative;
+          right: 41vw;
+          top: 15vh;
+        }
+
+        a:nth-child(5) {
+          position: relative;
+          left: 40vw;
+          bottom: 20vh;
+        }
+
+        .genres_slider__item:nth-child(3),
+        .genres_slider__item:nth-child(4) {
+          display: none;
+        }
+      }
+    }
+
+    .player {
+      display: none;
+      grid-column: 1/2;
+    }
+  }
+}
+
+/* iPads (вертикальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* стили */
+}
+
+/* Большие экраны ----------- */
+@media only screen and (min-width: 1824px) {
+  /* стили */
+}
